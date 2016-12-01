@@ -1,0 +1,8 @@
+{
+    "name": "falon/IMAP-Search",
+    "description": "IMAP Search",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=7.0",
+    }
+}

@@ -6,6 +6,7 @@ I developed this little tool on PHP7. Maybe it could work also with previous rel
 
 - php-ldap
 - php-mbstring
+- php-imap
 
 The username to search must be in the form `<name>@<domain>` (like Cyrus virtual domains) and it must be located under the LDAP tree `o=<domain>`.
 

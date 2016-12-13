@@ -10,6 +10,8 @@ I developed this little tool on PHP7. Maybe it could work also with previous rel
 
 The username to search must be in the form `<name>@<domain>` (like Cyrus virtual domains) and it must be located under the LDAP tree `o=<domain>`.
 
+The web server must run with authenticated access, to grant log tracking. I really suggest to add SSL layer (such as Apache httpd+mod_ssl+mod_auth...).
+
 ## Abstract
 This is a little client for Email Administrator which have distribuited popservers profiled over LDAP.
 

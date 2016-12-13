@@ -11,7 +11,8 @@ The username to search must be in the form `<name>@<domain>` and it must be loca
 
 ## Abstract
 This is a little client for Email Administrator which have distribuited popservers profiled over LDAP.
-You provide a username. Starting from username, this tool search over LDAP the popserver. Then make a IMAP call over popserver to search mails.
+
+You provide a username. Starting from username, this tool searches over LDAP the popserver. Then it makes an IMAP call over popserver to search mails. It finally shows the headers of mail found.
 
 ## Config
 Copy search.conf-default in search.conf.

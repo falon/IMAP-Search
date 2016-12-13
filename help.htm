@@ -1,0 +1,45 @@
+		<h1>
+			IMAP Headers Fetch</h1>
+		<h2>
+			Abstract</h2>
+		<p style="text-align: justify;">
+			This tool allows to look for the IMAP UID or an header and show headers of found emails.</p>
+		<h2>
+			Procedure</h2>
+		<p>
+			You must provide:</p>
+		<ol>
+			<li>
+				<span style="background-color:lime;">username</span> (a kind of &lt;name.surname&gt;@&lt;domain&gt;)</li>
+			<li>
+				the <span style="background-color:lime;">folder</span> where mail you believe to be.
+				<ol>
+					<li>
+						Take care on case: IMAP folder names are case sensitive.<br />
+						The folder <strong>Archive</strong> is different from folder <strong>archive</strong>.</li>
+				</ol>
+			</li>
+			<li>
+				The IMAP UID or the Message-ID of the mail.</li>
+		</ol>
+		<p style="text-align: justify;">
+			Insert that data, then click on &quot;View Header&quot;.</p>
+		<h2>
+			Example</h2>
+		<p>
+			You find an IMAP uid, folder and username looking for the following keys in Open-Xchange logs:</p>
+		<p>
+			<br/>
+			<samp>ERROR Attachment not found</samp></p>
+		<p>
+			or</p>
+		<p>
+			<samp>ERROR Attachment not found </samp><!--DOCTY--><username></username><samp><!--DOCTY-->&lt;username&gt;</samp></p>
+		<h3>
+			Results</h3>
+		<p>
+			<span id="cke_bm_192S" style="display: none;">&nbsp;</span><samp>2014-11-11T06:21:36,436+0100 ox21.csi.it ERROR [OXWorker-0169535] com.openexchange.ajax.requesthandler.DispatcherServlet Error processing request. com.openexchange.ajax.action=attachment com.openexchange.ajax.module=mail com.openexchange.ajax.requestNumber=25944028 com.openexchange.database.schema=oxdata2 com.openexchange.grizzly.remoteAddress=127.0.0.1 com.openexchange.grizzly.remotePort=41351 com.openexchange.grizzly.requestIp=127.0.0.1 com.openexchange.grizzly.requestURI=/ajax/mail com.openexchange.grizzly.serverName=127.0.0.1 com.openexchange.grizzly.servletPath=/ajax/mail com.openexchange.grizzly.threadName=OXWorker-0169535 com.openexchange.grizzly.userAgent=Open-Xchange USM HTTP Client com.openexchange.request.trackingId=b785997e28e14894b389d1fdb4b263b4 com.openexchange.session.authId=1ab043c2-72c1-4787-a7a9-bc6fb5183011 com.openexchange.session.clientId=USM-EAS com.openexchange.session.contextId=2 com.openexchange.session.sessionId=6152619cb69e45039796f49135820c10 com.openexchange.session.userId=14 com.openexchange.session.userName=<span style="background-color:#ffff00;">alice.doe@example.com</span> com.openexchange.exception.OXException: MSG-0049 Categories=USER_INPUT Message=&#39;Attachment 2 not found inside mail <span style="background-color:#ffff00;">17304</span> of mail folder <span style="background-color:#ffff00;">INBOX</span>&#39; exceptionID=1417626185-14805645</samp><span id="cke_bm_192E" style="display: none;">&nbsp;</span><!--DOCTY--></p>
+		<p>
+			<br/>
+			<!--DOCTY-->Well. Copy the highlighted fields in the web form and enjoy.</p>
+		<hr />

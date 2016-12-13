@@ -1,0 +1,12 @@
+[imap]
+authuser = 'admin'
+authpassword = 'password'
+
+[ldap]
+server = 'localhost'
+port = 389
+dnlog = 'cn=admin'
+password = 'password'
+base = 'c=en'
+host = mailhost
+uid = uid

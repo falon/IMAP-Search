@@ -23,10 +23,10 @@ print <<<END
 <tbody>
 <tr><td class="form">Folder </td><td colspan="4"><input type="text" name="folder" value="INBOX" size="50" class="input_text" id="1"></td></tr>
 <tr><td>Type</td>
-<td><input type="radio" name="key" value="uid" onclick="xmlhttpPost('uid.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">UID</td>
-<td><input type="radio" name="key" value="Message-ID" onclick="xmlhttpPost('msgid.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">Message-ID</td>
-<td><input type="radio" name="key" value="From" onclick="xmlhttpPost('from.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">From</td>
-<td><input type="radio" name="key" value="To" onclick="xmlhttpPost('to.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">To</td></tr>
+<td><input type="radio" required name="key" value="uid" onclick="xmlhttpPost('uid.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">UID</td>
+<td><input type="radio" required name="key" value="Message-ID" onclick="xmlhttpPost('msgid.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">Message-ID</td>
+<td><input type="radio" required name="key" value="From" onclick="xmlhttpPost('from.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">From</td>
+<td><input type="radio" required name="key" value="To" onclick="xmlhttpPost('to.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">To</td></tr>
 <tr id="keysearch"></tr>
 </tbody>
 <tfoot>

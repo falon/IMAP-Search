@@ -29,7 +29,7 @@ function conn_ldap($username,$host,$port,$user,$pwd) {
 
 function searchAttr ($conn,$attr,$attrnamefilt,$attrvaluefilt,$base) {
         if (!($sr=ldap_list($conn, $base, "(&($attrnamefilt=$attrvaluefilt)(objectclass=mailrecipient))",array("$attr"))))
-	exit ("Failed query <$attrnamefilt=$attrvaluefilt> over <$base>. Error: ".ldap_error($conn).".");
+	print (htmlentities("Failed query <$attrnamefilt=$attrvaluefilt> over <$base>. Error: ".ldap_error($conn)."."));
         $entry = ldap_get_entries($conn, $sr);
         if ($entry['count'] > 1) {
                 print '<p>'.htmlspecialchars('ERROR: multiple account with name <$attrname>.').'</p>';

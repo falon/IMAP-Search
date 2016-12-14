@@ -31,7 +31,7 @@ print <<<END
 </tbody>
 <tfoot>
 <tr style= "margin-top: 3"><td><input type="reset" value="Reset" name="Reset" class="btn"></td>
-<td><input type="submit" value="View Header"name="View Header" class="btn"></td></tr>
+<td colspan="4"><input type="submit" value="View Header"name="View Header" class="btn"></td></tr>
 </tfoot></table></form>
 
 

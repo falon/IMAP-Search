@@ -47,7 +47,7 @@ list($_,$dom) = explode('@',$user);
 $mailhost = searchAttr($ldapconn,$conf['ldap']['host'],$conf['ldap']['uid'],$user,"o=$dom,".$conf['ldap']['base']);
 ldap_close($ldapconn);
 
-if (!isset($mailhost)) exit ('<p>ERRORE: '.htmlspecialchars("I can't determine the popserver where <$user> lives").'</p>');
+if (!isset($mailhost)) exit ('<p>ERROR: '.htmlspecialchars("I can't determine the popserver where <$user> lives.").'</p>');
 /*****************************/
 
 print "<hr>";

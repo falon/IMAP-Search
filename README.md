@@ -18,6 +18,7 @@ The username to search must be in the form `<name>@<domain>` (like Cyrus virtual
 The web server must run with authenticated access, to grant log tracking. I really suggest to add SSL layer (such as Apache httpd+mod_ssl+mod_auth...).
 
 ## Config
+Move `style.css96` and `ajaxsbmt.js` in `DOCUMENT_ROOT/include` dir.
 Copy search.conf-default in search.conf.
 Arrange the values:
 ```

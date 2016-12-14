@@ -1,5 +1,6 @@
 # IMAP-Search
 IMAP Search tool for web by many criteria, such as uid, message-ID, From, To.
+![A screenshot](/doc/screenshot.jpg?raw=true "Screenshot")
 
 ## Abstract
 This is a little client for Email Administrator which have distribuited popservers profiled over LDAP.

@@ -37,7 +37,7 @@ host = the attribute name which value is the popserver of username
 uid = the attribute name which value is the username to look for.
 ```
 
-This is an instance of LDIF file you should have to use this tool:
+This is an instance of LDAP profile you should have to use this tool:
 ```
 dn: "uid"=[...,...,]o=<domain>,<base>
 "uid"=username

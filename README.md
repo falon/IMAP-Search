@@ -19,7 +19,7 @@ The username to search must be in the form `<name>@<domain>` (like Cyrus virtual
 The web server must run with authenticated access, to grant log tracking. I really suggest to add SSL layer (such as Apache httpd+mod_ssl+mod_auth...).
 
 ## Config
-Move `style.css96` and `ajaxsbmt.js` in `DOCUMENT_ROOT/include` dir.
+Move `style.css` and `ajaxsbmt.js` in `DOCUMENT_ROOT/include` dir.
 Copy search.conf-default in search.conf.
 Arrange the values:
 ```
@@ -37,7 +37,7 @@ host = the attribute name which value is the popserver of username
 uid = the attribute name which value is the username to look for.
 ```
 
-This is an instance of LDIF file you should have to use this tool:
+This is an instance of LDAP profile you should have to use this tool:
 ```
 dn: "uid"=[...,...,]o=<domain>,<base>
 "uid"=username

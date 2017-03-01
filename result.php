@@ -27,6 +27,9 @@ if ( isset($_POST['from']) )
         $imapsearch['FROM'] = $_POST['from'];
 if ( isset($_POST['to']) )
         $imapsearch['TO'] = $_POST['to'];
+if ( isset($_POST['subject']) )
+        $imapsearch['SUBJECT'] = $_POST['subject'];
+
 
 if (filter_var($user, FILTER_VALIDATE_EMAIL) === FALSE)
  exit ('<p>'.htmlspecialchars('Please, insert a valid email address, not <'.$user.'>').'.</p>');

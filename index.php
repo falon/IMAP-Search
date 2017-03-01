@@ -18,20 +18,21 @@ print <<<END
  <form method="POST" accept-charset="UTF-8" name="Richiestadati" action="result.php" onSubmit="xmlhttpPost('result.php', 'Richiestadati', 'Risultato', '<img src=\'/include/pleasewait.gif\'>'); return false;">
 <table align="center" cellspacing=1>
 <thead>
-<tr><td class="form">Username </td><td colspan="4"><input type="email" name="username" size="80" class="input_text" id="1" required></td></tr>
+<tr><td class="form">Username </td><td colspan="5"><input type="email" name="username" size="80" class="input_text" id="1" required></td></tr>
 </thead>
 <tbody>
-<tr><td class="form">Folder </td><td colspan="4"><input type="text" name="folder" value="INBOX" size="50" class="input_text" id="1"></td></tr>
+<tr><td class="form">Folder </td><td colspan="5"><input type="text" name="folder" value="INBOX" size="50" class="input_text" id="1"></td></tr>
 <tr><td>Type</td>
 <td><input type="radio" required name="key" value="uid" onclick="xmlhttpPost('uid.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">UID</td>
 <td><input type="radio" required name="key" value="Message-ID" onclick="xmlhttpPost('msgid.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">Message-ID</td>
 <td><input type="radio" required name="key" value="From" onclick="xmlhttpPost('from.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">From</td>
-<td><input type="radio" required name="key" value="To" onclick="xmlhttpPost('to.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">To</td></tr>
+<td><input type="radio" required name="key" value="To" onclick="xmlhttpPost('to.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">To</td>
+<td><input type="radio" required name="key" value="Subject" onclick="xmlhttpPost('subj.htm', 'Richiestadati', 'keysearch', '<td colspan=\'2\'><img src=\'/include/pleasewait.gif\'></td>'); return true;">Subject</td></tr>
 <tr id="keysearch"></tr>
 </tbody>
 <tfoot>
 <tr style= "margin-top: 3"><td><input type="reset" value="Reset" name="Reset" class="btn"></td>
-<td colspan="4"><input type="submit" value="View Header"name="View Header" class="btn"></td></tr>
+<td colspan="5"><input type="submit" value="View Header"name="View Header" class="btn"></td></tr>
 </tfoot></table></form>
 
 

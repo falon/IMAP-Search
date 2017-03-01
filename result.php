@@ -57,6 +57,7 @@ print "<hr>";
 // connecting to imap mailserver
 $openString = '{'.$mailhost.':143/imap/authuser='.$conf['imap']['authuser'].'}';
 
+syslog(LOG_INFO, $client_user.': Looking into mailbox <'.$user.'>');
 if ( empty($folder) ) {
 	$connection = imap_open($openString, $user,$conf['imap']['authpassword'], OP_READONLY)
         	or exit('<p>'.htmlspecialchars("ERROR connecting to <$mailhost>: " . imap_last_error()).'</p>');

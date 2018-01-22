@@ -80,7 +80,7 @@ function print_msg ($username, $mbox,$user,$authpassword,$mailhost,$imapsearch,$
 	foreach ( $imapUIDs as $imapUID ) {
 		$header = imap_fetchheader($connection, $imapUID,FT_UID);
 		if ( $header ) {
-			printf ("<p>Message with UID %s on folder %s.</p><pre>%s</pre>",$imapUID,$folder,$header);
+			printf ("<p>Message with UID %s on folder %s.</p><pre>%s</pre>",$imapUID,htmlentities($folder),htmlentities($header));
 			syslog(LOG_INFO,"$username: Found Message with UID <$imapUID> on folder <$folder>");
 		}
 	}
